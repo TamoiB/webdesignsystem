@@ -185,3 +185,8 @@ text-align: center
     }
     
 }
+@media (max-width: 300px) {
+    .box, .font-group{
+        width: 100%;
+    }
+}
