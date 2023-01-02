@@ -1,0 +1,187 @@
+/*Font Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Exo+2&family=Montserrat&family=Passions+Conflict&family=Playfair+Display&family=Prosto+One&family=Quicksand&family=Sevillana&display=swap');
+
+/*Reset and General CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: #c5d5e4;
+    color: #000;
+}
+h2{
+    margin-top: 30px;
+    font-size: 1.75rem;
+    color: #000 !important;
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+.bold{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*Header Section*/
+header{
+    width: 100%;
+    height: 65px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    background-color: #003554;
+    border-bottom: 2px solid #456990;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 10px;
+}
+header nav{
+    margin-right: 20px;
+}
+header nav ul li{
+    font-size: 1rem;
+    margin-left: 20px;
+    display: inline;
+}
+header nav ul li a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    vertical-align: center;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    color: #F45B69;
+    transition: all 250ms ease-out;
+}
+
+/*Main Section one*/
+#color{
+margin-top: 70px;
+text-align: center
+}
+
+#color .color-group , #typeface, #textstyle{
+    width: 95%;
+    margin: 50px auto ;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.color-group:first-of-type{
+    margin-top: 100px;
+}
+.color-group h3{
+    color: #F45B69;
+}
+.color-group h3 span{
+    color:#114B5F;
+    font-weight: 900;
+}
+.boxes, #typeface .container, #textstyle .container{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    width: 30%;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px #333;
+}
+
+/*Font Family Section*/
+.font-group{
+    width: 45%;
+    height: 200px;
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(110, 206, 144);
+    color: #333;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.font-group h4{
+    font-family: 'Arvo', serif;
+}
+.font-group p{
+    font-size: 1rem;
+}
+.font-group h4:last-of-type{
+    margin-top: 15px;
+}
+
+#textstyle .container{
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+}
+#textstyle h1{
+    font-size: 2rem;
+    margin-bottom: -20px;
+}
+#textstyle h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+#textstyle h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#textstyle h4{
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+#textstyle h5{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#textstyle h6{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+#textstyle p{
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    header h1{
+        font-size: 1.2rem;
+    }
+    header{
+        flex-direction: column;
+        height: 75px;
+    }
+    header nav ul{
+        margin-top: -30px;
+    }
+    .box, 
+    .font-group{
+        width: 80%;
+    }
+    
+}
